@@ -640,10 +640,14 @@ h2 {
 //footer
 
 .footer{
+    margin-top: 0.5rem;
+    padding-top: 3rem;
     background: var(--secondaryColor);
 
     .sectionContainer{
-        gap:2.5rem;
+        gap:1.5rem;
+        flex-direction: column;
+        justify-content: center;
 
         .gridOne{
             gap:1rem;

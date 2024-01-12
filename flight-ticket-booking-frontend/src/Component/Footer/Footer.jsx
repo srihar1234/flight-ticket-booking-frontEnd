@@ -1,13 +1,13 @@
 import { AiFillYoutube, AiOutlineTwitter } from "react-icons/ai"
 import logo from "../../Assets/logo.png"
 import {TiSocialFacebook} from "react-icons/ti"
-import {FaPinterestP} from "react-icons/ai"
+import { FaPinterest } from "react-icons/fa";
 
 
 function Footer() {
   return (
     <div className="footer">
-      <div className="sectionContainer container grid">
+      <div className="sectionContainer container flex">
 
         <div className="gridOne">
           <div className="logoDiv">
@@ -18,7 +18,7 @@ function Footer() {
             <TiSocialFacebook className="icon"/>
             <AiOutlineTwitter className="icon"/>
             <AiFillYoutube className="icon"/>
-            <FaPinterestP className="icon"/>
+            <FaPinterest className="icon"/>
           </div>
         </div>
 
