@@ -1,15 +1,26 @@
 import lounge from "../../Assets/lounge.jpg"
 
+
+import { useEffect } from "react";
+
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 function Lounge() {
+
+  useEffect(()=>{
+    Aos.init({duration:2000})
+  },[]);
+
   return (
     <div className="lounge container section">
       <div className="sectionContainer grid">
 
-        <div className="imgDiv">
+        <div data-aos="fade-left" data-aos-duration="2500" className="imgDiv">
           <img src={lounge} />
         </div>
 
-        <div className="textDiv">
+        <div data-aos="fade-right" data-aos-duration="2500" className="textDiv">
           <h2>Unaccompanied Minor Lounge</h2>
 
           <div className="grids grid">

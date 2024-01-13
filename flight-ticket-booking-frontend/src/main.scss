@@ -269,7 +269,8 @@ h2 {
         .plane {
             position: absolute;
             width: 100%;
-            top: 0%;
+            top: -30%;
+            left: -10%;
         }
     }
 }
@@ -1121,6 +1122,7 @@ h2 {
         padding:6rem 0.4rem;
     }
 
+    //navBar
     .navBar{
         .navBarOne,.navBarTwo{
             padding: 1.5rem 5rem;
@@ -1130,4 +1132,140 @@ h2 {
             padding: 0 5rem;
         }
     }
+
+    //home
+    .home{
+     .mainText{
+        width:60%;
+        font-size: 25px;
+        line-height: 4rem;
+     }
+     .homeImages{
+        .videoDiv{
+            width: 90%;
+            height:300px;
+
+            .video{
+                height:100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 15rem;
+            }
+        }
+
+        .plane{
+            width: 100%;
+            top:-40%;
+        }
+     }   
+    }
+
+    //search
+    .search{
+        .sectionContainer{
+            .btns{
+                width:50%;
+            }
+        }
+    }
+
+    //subscribe
+    .subscribe{
+        .sectionContainer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .inputDiv{
+                width: 50%;
+            }
+        }
+    }
+
+    //travellers
+    .travellers{
+        .sectionContainer{
+            margin-top: 0%;
+    }
+    }
+}
+
+@media screen and (min-width:1106px){
+    .subscribe{
+        .sectionContainer{
+            .inputDiv{
+                width: 60%;
+            }
+        }
+    }
+
+    .home{
+        .mainText{
+           width:60%;
+           font-size: 25px;
+           line-height: 4rem;
+        }
+        .homeImages{
+           .plane{
+               width: 80%;
+               top:-60%;
+               left: 3%;
+           }
+        }   
+       }
+
+       .search{
+        .sectionContainer{
+            .btns{
+                width:50%;
+                margin-top: 5rem;
+                .singleBtn{
+
+                    &:hover{
+                        background: var(--primaryColor);
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        }
+    }
+
+    .lounge {
+        .sectionContainer {
+            gap: 1.2rem;
+            margin-bottom: 2rem;
+            padding-bottom: 0%;
+    
+            .imgDiv {
+                margin: auto;
+    
+                img {
+                    width: 80%;
+                    max-width: 430px;
+                }
+            }
+        }
+    }
+
+    .travellers{
+        .sectionContainer{
+            padding-top: 0%;
+            margin-top: 0%;
+        }
+    }
+}
+
+::selection{
+    background: var(--primaryColor);
+    color:var(--whiteColor);
+}
+
+::-webkit-scrollbar{
+    width:10px;
+    background: gray;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--primaryColor);
+    border-radius: 10px;
 }

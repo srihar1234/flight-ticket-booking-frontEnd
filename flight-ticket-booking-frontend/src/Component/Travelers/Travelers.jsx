@@ -4,14 +4,24 @@ import london from "../../Assets/london.jpg"
 import hari from "../../Assets/hari.jpg"
 import profile from "../../Assets/profile.png"
 
+import { useEffect } from "react";
+
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 
 function Travelers() {
+
+  useEffect(()=>{
+    Aos.init({duration:2000})
+  },[]);
+
   return (
     <div className="travellers container section">
       <div className="sectionContainer">
-        <h2>Top travelers of this month</h2>
+        <h2 data-aos="fade-up" data-aos-duration="2500">Top travelers of this month</h2>
 
-        <div className="travelersContainer grid">
+        <div data-aos="fade-right" data-aos-duration="2500" className="travelersContainer grid">
 
           <div className="singleTraveler">
             <img src={tamilnadu} className="destinationImage"/>

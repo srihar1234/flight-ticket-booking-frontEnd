@@ -237,7 +237,8 @@ h2 {
 .home .homeImages .plane {
   position: absolute;
   width: 100%;
-  top: 0%;
+  top: -30%;
+  left: -10%;
 }
 
 .search .sectionContainer {
@@ -830,4 +831,96 @@ h2 {
   .navBar .nav_with_bg {
     padding: 0 5rem;
   }
+  .home .mainText {
+    width: 60%;
+    font-size: 25px;
+    line-height: 4rem;
+  }
+  .home .homeImages .videoDiv {
+    width: 90%;
+    height: 300px;
+  }
+  .home .homeImages .videoDiv .video {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 15rem;
+  }
+  .home .homeImages .plane {
+    width: 100%;
+    top: -40%;
+  }
+  .search .sectionContainer .btns {
+    width: 50%;
+  }
+  .subscribe .sectionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .subscribe .sectionContainer .inputDiv {
+    width: 50%;
+  }
+  .travellers .sectionContainer {
+    margin-top: 0%;
+  }
+}
+@media screen and (min-width: 1106px) {
+  .subscribe .sectionContainer .inputDiv {
+    width: 60%;
+  }
+  .home .mainText {
+    width: 60%;
+    font-size: 25px;
+    line-height: 4rem;
+  }
+  .home .homeImages .plane {
+    width: 80%;
+    top: -60%;
+    left: 3%;
+  }
+  .search .sectionContainer .btns {
+    width: 50%;
+    margin-top: 5rem;
+  }
+  .search .sectionContainer .btns .singleBtn:hover {
+    background: var(--primaryColor);
+    color: var(--whiteColor);
+  }
+  .lounge .sectionContainer {
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0%;
+  }
+  .lounge .sectionContainer .imgDiv {
+    margin: auto;
+  }
+  .lounge .sectionContainer .imgDiv img {
+    width: 80%;
+    max-width: 430px;
+  }
+  .travellers .sectionContainer {
+    padding-top: 0%;
+    margin-top: 0%;
+  }
+}
+::-moz-selection {
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+}
+::selection {
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: gray;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primaryColor);
+  border-radius: 10px;
 }/*# sourceMappingURL=main.css.map */
