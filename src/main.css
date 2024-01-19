@@ -321,13 +321,15 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
+  font-size: 20px;
+  gap: 2rem;
+  margin-top: 3rem;
 }
 .search .sectionContainer .resultDiv .singleFlight {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 1200px;
+  width: 1000px;
   height: 110px;
   padding: 12px;
   background: gray;
