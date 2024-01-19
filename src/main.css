@@ -310,6 +310,44 @@ h2 {
   font-size: 15px;
   opacity: 0.8;
 }
+.search .sectionContainer .searchInputs .singleInput .select {
+  width: 150px;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 7px;
+}
+.search .sectionContainer .resultDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+.search .sectionContainer .resultDiv .singleFlight {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 1200px;
+  height: 110px;
+  padding: 12px;
+  background: gray;
+  border-radius: 15px;
+  margin-top: 12px;
+}
+.search .sectionContainer .resultDiv .singleFlight .arrival {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.search .sectionContainer .resultDiv .singleFlight .styled-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 150px;
+}
 
 .support .sectionContainer .titleDiv {
   text-align: center;

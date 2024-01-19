@@ -355,6 +355,50 @@ h2 {
                         }
                     }
                 }
+
+                .select{
+                    width:150px;
+                    font-size: 15px;
+                    padding: 5px;
+                    border-radius: 7px;
+                }
+            }
+
+        }
+
+        .resultDiv{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            
+            .singleFlight{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                width:1200px;
+                height: 110px;
+                padding: 12px;
+                background: gray;
+                border-radius: 15px;
+                margin-top: 12px;
+
+                .arrival{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .styled-btn{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    height: 70px;
+                    width:150px;
+                }
             }
         }
 
@@ -365,6 +409,7 @@ h2 {
 
 .support {
     .sectionContainer {
+        
         .titleDiv {
             text-align: center;
 
