@@ -35,21 +35,21 @@ function Lounge() {
             <div className="singleGrid">
               <span className="gridTitle">Priority Boarding</span>
               <p>
-                You can also contact airlines from your mobile
+                You can access the priority boarding at your ease
               </p>
             </div>
 
             <div className="singleGrid">
               <span className="gridTitle">Care on the flight</span>
               <p>
-                You can also contact airlines from your mobile
+                Enjoy free drinks and refreshments
               </p>
             </div>
 
             <div className="singleGrid">
               <span className="gridTitle">Chauffeur Services</span>
               <p>
-                You can also contact airlines from your mobile
+                Check Tamil nadu domestic road services
               </p>
             </div>
 

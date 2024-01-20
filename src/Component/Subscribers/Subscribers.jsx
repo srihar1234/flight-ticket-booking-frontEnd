@@ -16,7 +16,7 @@ function Subscribers() {
         <h2 data-aos="fade-up" data-aos-duration="2500">Subscribe Newsletters & get Latest News</h2>
         <div data-aos="fade-down" data-aos-duration="2500" className="inputDiv flex">
           <input type="email" placeholder="Enter your Email address"/>
-          <button className="btn">Subscribe</button>
+          <button className="btn" onClick={()=>{alert("THANKS FOR SUBSCRIPTION.RECEIVE NOTIFICATION THROUGH MAIL")}}>Subscribe</button>
         </div>
       </div>
     </div>

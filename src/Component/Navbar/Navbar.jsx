@@ -1,6 +1,4 @@
-import { SiConsul } from "react-icons/si";
-import { BsPhoneVibrate } from "react-icons/bs";
-import { AiOutlineGlobal } from "react-icons/ai";
+
 import { CgMenuGridR } from "react-icons/cg";
 
 import logo from "../../Assets/logo.png";
@@ -33,18 +31,9 @@ function Navbar() {
     <div className="navBar flex">
 
       <div className="navBarOne flex">
-        <div>
-          <SiConsul className="icon"/>
-        </div>
 
-        <div className="none flex">
-          <h2>TAMIL NADU DOMESTIC AIRLINES</h2>
-        </div>
+          <h2>TAMIL NADU DOMESTIC AIRLINES</h2>   
 
-        {/* <div className="atb flex">
-          <span>Sign In</span>
-          <span>Sign Out</span>
-        </div> */}
       </div>
 
       <div className={noBg}>
@@ -54,15 +43,17 @@ function Navbar() {
 
         <div onClick={removeNavBar} className={active}>
           <ul className="menu flex">
-            <li className="listItems">Home</li>
-            <li className="listItems">About</li>
-            <li className="listItems">Offers</li>
-            <li className="listItems">Seats</li>
-            <li className="listItems">Destinations</li>
+            <li className="listItems">TRAVEL</li>
+            <li className="listItems">AROUND</li>
+            <li className="listItems">TAMIL NADU</li>
+            <li className="listItems">WITH</li>
+            <li className="listItems">US</li>
           </ul>
           <button className="btn flex btnOne">Contact</button>
         </div>
-        <button className="btn flex btnTwo">Contact</button>
+        <div className="logoDiv">
+          <img src={logo} className="logo"/>
+        </div>
         <div onClick={showNavBar} className="toggleIcon">
           <CgMenuGridR className="icon"/>
         </div>

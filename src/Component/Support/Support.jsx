@@ -18,7 +18,7 @@ function Support() {
         <div data-aos="fade-down" data-aos-duration="2500" className="titleDiv">
           <small>Travel support</small>
           <h2>Plan your travel with confidence</h2>
-          <p>Find help with booking and travel plans,See what to expect along the journey</p>
+          <p>FLY AROUND TAMIL NADU WITH US</p>
         </div>
 
         <div className="infoDiv grid">
@@ -27,7 +27,7 @@ function Support() {
 
             <div className="singleInfo">
               <span className="number">01</span>
-              <h4>Travel requirements for Dubai</h4>
+              <h4>Travel requirements around tamil nadu</h4>
               <p>Find help with booking and travel plans,See what to expect along the journey</p>
             </div>
 

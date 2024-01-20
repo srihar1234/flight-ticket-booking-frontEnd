@@ -39,15 +39,15 @@ function Info() {
               <BsShieldCheck className="icon"/>
             </div>
             <span className="cardTitle">Smart Checklist</span>
-            <p>You can also book your tickets through phone</p>
+            <p>Check local tourism centers at your destinations</p>
           </div>
 
           <div className="singleCard grid">
             <div className="iconDiv flex">
               <BsBookmarkCheck className="icon"/>
             </div>
-            <span className="cardTitle">Save More</span>
-            <p>You can also book your tickets through phone</p>
+            <span className="cardTitle">Save Time</span>
+            <p>Non-delayable flight airline</p>
           </div>
 
         </div>

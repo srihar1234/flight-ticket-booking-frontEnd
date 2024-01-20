@@ -118,14 +118,17 @@ h2 {
   width: 100%;
   z-index: 1000;
 }
-.navBar .navBarOne,
 .navBar .navBarTwo {
   padding: 1rem;
+  margin-top: 2.5rem;
   justify-content: space-between;
   width: 100%;
 }
 .navBar .navBarOne {
   background-color: var(--secondaryColor);
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
 }
 .navBar .navBarOne .icon:hover {
   color: var(--primaryColor);

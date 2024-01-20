@@ -101,7 +101,7 @@ function Search() {
 
   const initPayment = (data)=>{
     const options = {
-      key:"************",
+      key:"rzp_test_H2dNtLFiIqoQui",
       amount:data.amount,
       currency:data.currency,
       order_id:data.id,
