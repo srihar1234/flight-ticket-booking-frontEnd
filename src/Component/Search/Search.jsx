@@ -88,7 +88,7 @@ function Search() {
         "checkIn": checkIn,
         "travellers": travellers
       };
-      const response = await axios.post('http://localhost:4001/flights', request)
+      const response = await axios.post('https://flight-ticket-booking-nikh.onrender.com/flights', request)
       setResFlights(response.data);
       console.log(resFlights);
       setView(true);
