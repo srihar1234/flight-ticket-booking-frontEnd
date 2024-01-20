@@ -2,6 +2,7 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 import { RiAccountPinCircleLine } from "react-icons/ri";
 import { RxCalendar } from "react-icons/rx";
 import { GoArrowSwitch } from "react-icons/go";
+import { MdCurrencyRupee } from "react-icons/md";
 
 import axios from 'axios';
 
@@ -257,11 +258,11 @@ function Search() {
                   </div>
                   <button className="btn styled-btn" onClick={()=>handlePremium(travellers,flight.premium)}>
                     <h3>PREMIUM</h3>
-                    <h5>{parseInt(travellers)*parseInt(flight.premium)}</h5>
+                    <h5><MdCurrencyRupee className="icon"/>{parseInt(travellers)*parseInt(flight.premium)}</h5>
                   </button>
                   <button className="btn styled-btn" onClick={()=>handleEconomy(travellers,flight.economy)}>
                     <h3>ECONOMY</h3>
-                    <h5>{parseInt(travellers)*parseInt(flight.economy)}</h5>
+                    <h5><MdCurrencyRupee className="icon"/>{parseInt(travellers)*parseInt(flight.economy)}</h5>
                   </button>
                 </div>
               ))}
