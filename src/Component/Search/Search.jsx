@@ -134,9 +134,13 @@ function Search() {
     }
   }
 
-  const handleEconomy = async()=>{
+  const handleEconomy = async(n,cost)=>{
     try{
-      alert("clicked");
+      const orderUrl = "https://flight-ticket-booking-nikh.onrender.com/orders";
+      let total = parseInt(n)*parseInt(cost);
+      const {data} = await axios.post(orderUrl,{amount:total});
+      console.log(data);
+      initPayment(data.data);
     }catch(err){
       console.log(err);
     }
@@ -255,7 +259,7 @@ function Search() {
                     <h3>PREMIUM</h3>
                     <h5>{parseInt(travellers)*parseInt(flight.premium)}</h5>
                   </button>
-                  <button className="btn styled-btn" onClick={()=>handleEconomy()}>
+                  <button className="btn styled-btn" onClick={()=>handleEconomy(travellers,flight.economy)}>
                     <h3>ECONOMY</h3>
                     <h5>{parseInt(travellers)*parseInt(flight.economy)}</h5>
                   </button>
