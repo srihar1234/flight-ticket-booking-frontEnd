@@ -110,6 +110,14 @@ function Search() {
     }
   }
 
+  const handleEconomy = async()=>{
+    try{
+      alert("clicked");
+    }catch(err){
+      console.log(err);
+    }
+  }
+
   return (
     <div className="search container section">
       <div className="sectionContainer grid">
