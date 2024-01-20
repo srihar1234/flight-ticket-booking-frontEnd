@@ -99,12 +99,36 @@ function Search() {
     }
   };
 
+  const initPayment = (data)=>{
+    const options = {
+      key:"************",
+      amount:data.amount,
+      currency:data.currency,
+      order_id:data.id,
+      handler:async (response)=>{
+        try{
+          const verifyUrl = "https://flight-ticket-booking-nikh.onrender.com/verify";
+          const {data} = await axios.post(verifyUrl,response);
+          console.log(data);
+        }catch(err){
+          console.log(err)
+        }
+      },
+      theme:{
+        color:"#3399cc",
+      },
+    };
+    const rzp1 = new window.Razorpay(options);
+    rzp1.open();
+  };
+
   const handlePremium = async(n,cost)=>{
     try{
       const orderUrl = "https://flight-ticket-booking-nikh.onrender.com/orders";
       let total = parseInt(n)*parseInt(cost);
       const {data} = await axios.post(orderUrl,{amount:total});
       console.log(data);
+      initPayment(data.data);
     }catch(error){
       console.log(error);
     }

@@ -38,14 +38,13 @@ function Navbar() {
         </div>
 
         <div className="none flex">
-          <li className="flex"> <BsPhoneVibrate className="icon"/> Support</li>
-          <li className="flex"> <AiOutlineGlobal className="icon"/> Languages</li>
+          <h2>TAMIL NADU DOMESTIC AIRLINES</h2>
         </div>
 
-        <div className="atb flex">
+        {/* <div className="atb flex">
           <span>Sign In</span>
           <span>Sign Out</span>
-        </div>
+        </div> */}
       </div>
 
       <div className={noBg}>
